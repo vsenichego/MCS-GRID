@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+  }
+  
+html {
+    font-size: 16px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+  
+body {
+    background-color: #F2F2F2;
+}
+  
+.container {
+      display: grid;
+      margin: 0;
+      grid-template-columns: 1fr 2fr 5rem;
+      grid-template-rows: 5rem;
+      grid-gap: 2rem 1rem;
+      grid-template-areas: 
+      "brand-logo contact-form contact-form address"
+      "footer footer footer";
+}
+
+.brand-logo {
+    grid-area: logo;
+}
+
+.contact-form {
+    grid-area: form;
+    align-self: center;
+}
+
+.adddress {
+    grid-area: address;
+}
+
+.footer {
+    grid-area: footer;
+}
